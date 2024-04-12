@@ -13,7 +13,7 @@ const Sidebar = () => {
       <div className="flex flex-col gap-6">
         {sidebarLinks.map((link) => {
           const isActive =
-            pathname === link.route || pathname.startsWith(link.route)
+            pathname === link.route || pathname.startsWith(`${link.route}/`)
           return (
             <Link
               href={link.route}
@@ -30,7 +30,7 @@ const Sidebar = () => {
                 height={24}
               />
               <p className="text-lg font-semibold max-lg:hidden">
-                {link.label} 
+                {link.label}
               </p>
             </Link>
           )
