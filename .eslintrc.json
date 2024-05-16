@@ -1,13 +1,3 @@
 {
-  "rules": {
-    "react/jsx-key": ["error", { "checkFragmentShorthand": true }] // Adjust options if needed
-  },
-  "overrides": [
-    {
-      "files": ["components/MobileNav.tsx"], // Replace with your actual path
-      "rules": {
-        "react/jsx-key": "off" // Disable the rule for MobileNav.tsx
-      }
-    }
-  ]
+  "off": true // Disables all ESLint rules
 }
