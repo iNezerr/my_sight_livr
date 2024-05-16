@@ -1,8 +1,13 @@
 {
-  "extends": "next",
   "rules": {
-    "react/no-unescaped-entities": "off",
-    "@next/next/no-page-custom-font": "off",
-    "react/jsx-key": [1, { "checkFragmentShorthand": true }]
-  }
+    "react/jsx-key": ["error", { "checkFragmentShorthand": true }] // Adjust options if needed
+  },
+  "overrides": [
+    {
+      "files": ["components/MobileNav.tsx"], // Replace with your actual path
+      "rules": {
+        "react/jsx-key": "off" // Disable the rule for MobileNav.tsx
+      }
+    }
+  ]
 }
